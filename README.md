@@ -6,7 +6,6 @@
 
 ![SpaceGame](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/shooter.png?raw=true)
 
-Description detail here:
 Created by CJ Greer | 2025
 
 SpaceGame is a fast-paced arcade shooter where you pilot a spaceship through an endless asteroid field while collecting powerups, upgrading your weapons, and fighting for survival. Your goal: stay alive, rack up points, and climb through the levels as the danger increases.
