@@ -4,7 +4,7 @@
 
 ### SpaceGame Project
 
-![SpaceGame](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/spacer.png?raw=true)
+![SpaceGame]([https://github.com/9669061/SeniorPortfolio2026/blob/main/images/spacer.png?raw=true](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/shooter.png?raw=true))
 
 Description detail here:
 
