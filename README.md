@@ -14,7 +14,7 @@ Dodge falling rocks, blast obstacles with your lasers, and snag powerups to boos
 
 Every level ramps up the challenge by spawning asteroids more frequently. Careful shots and quick movements earn higher scores and better accuracy ratings. But watch your ship’s health — once it’s gone, it’s game over.
 
-Features:
+#### Features:
 
 Dynamic levels with increasing difficulty
 
@@ -39,8 +39,22 @@ Survive as long as possible, destroy incoming asteroids, collect upgrades, and p
 ## Term 2 Projects
 
 ### Boxer Game Project
+(hole in the wall clone)
 
-![SpaceGame](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/shooter.png?raw=true)
+Hole in the Wall is a fast-paced reaction game where players must quickly position themselves to fit through oncoming walls with cutout shapes. As each wall rushes forward, you have only seconds to find the correct spot or pose before being knocked off the platform. The walls get faster and trickier with each round, testing your timing, spatial awareness, and agility. The last player standing wins.
 
-Description detail here:
+#### Features:
 
+Top down point of view
+
+Moving obstacles with random generation
+
+Multiplayer?
+
+jumping and movement capabalities
+
+Power ups?
+
+colorful graphics
+
+different map types
