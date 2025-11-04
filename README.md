@@ -47,14 +47,24 @@ Hole in the Wall is a fast-paced reaction game where players must quickly positi
 
 Top down point of view
 
+![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept1.png?raw=true)
+
 Moving obstacles with random generation
 
+![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept1.png?raw=true)
+
 Multiplayer?
+
+![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept1.png?raw=true)
 
 jumping and movement capabalities
 
 Power ups?
 
-colorful graphics
+Colorful graphics
 
-different map types
+Skins?
+
+Different map types
+
+![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept1.png?raw=true)
