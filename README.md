@@ -51,7 +51,7 @@ Top down point of view
 
 Moving obstacles with random generation
 
-![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept1.png?raw=true)
+![TopDown](https://github.com/9669061/SeniorPortfolio2026/blob/main/images/concept2.png?raw=true)
 
 Multiplayer?
 
