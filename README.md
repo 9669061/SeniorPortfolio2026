@@ -40,7 +40,7 @@ Survive as long as possible, destroy incoming asteroids, collect upgrades, and p
 
 ### HOLEY WALL!!! Project
 (hole in the wall clone)
-### Memebers:
+### Members:
 - CJ
 - Eli
 - Mars
