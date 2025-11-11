@@ -1,4 +1,3 @@
-// CJ Greer | 11/3/2025 | Square Body
 class SquareBody {
   // member variable
   int x, y, w, h, speed;
