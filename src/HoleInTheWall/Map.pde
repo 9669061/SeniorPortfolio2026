@@ -13,7 +13,7 @@ class Map {
   }
     // member methods
   void display() {
-    fill(c1);
+    fill(150, 150, 150);
     rectMode(CENTER);
     rect(x, y, w, h);
   }
