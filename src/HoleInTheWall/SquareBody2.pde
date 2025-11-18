@@ -1,28 +1,27 @@
 // CJ Greer | 11/3/2025 | Square Body
-class SquareBody {
+class SquareBody2 {
   // member variable
   int x, y, w, h, speed, js;
   color c1;
   float yVel;
   float gravity;
   float jumpStrength;
-  boolean isOnGround, falling;
+  boolean isOnGround;
   // PVector pv1;
 
   // constructor
-  SquareBody(int x, int y, color c1) {
+  SquareBody2(int x, int y, color c1) {
     this.x = x;
     this.y = y;
     w = 50;
     h = 50;
     speed = 5;
-    this.c1 = 255;
+    this.c1 = 123;
     yVel = 0;
     gravity = 0.5;
     js = 7;
     jumpStrength = 7;
     isOnGround = true;
-    falling = false;
   }
   // member methods
   void display() {
@@ -43,38 +42,18 @@ class SquareBody {
     } else {
       isOnGround = false;
     }
-    if (falling == true) {
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-    }
     if (y >= 775) {
       isOnGround = false;
-      falling = true;
+      yVel = -js;
     }
     if (y <= 225) {
       isOnGround = false;
-      falling = true;
     }
     if (x >= 775) {
       isOnGround = false;
-      falling = true;
     }
     if (x <= 225) {
       isOnGround = false;
-      falling = true;
     }
   }
 
