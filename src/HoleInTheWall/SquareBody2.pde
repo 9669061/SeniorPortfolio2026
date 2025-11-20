@@ -6,7 +6,7 @@ class SquareBody2 {
   float yVel;
   float gravity;
   float jumpStrength;
-  boolean isOnGround;
+  boolean isOnGround, falling;
   // PVector pv1;
 
   // constructor
@@ -42,18 +42,25 @@ class SquareBody2 {
     } else {
       isOnGround = false;
     }
+    if (falling == true) {
+      h -= 50;
+      w -= 50;
+    }
     if (y >= 775) {
       isOnGround = false;
-      yVel = -js;
+      falling = true;
     }
     if (y <= 225) {
       isOnGround = false;
+      falling = true;
     }
     if (x >= 775) {
       isOnGround = false;
+      falling = true;
     }
     if (x <= 225) {
       isOnGround = false;
+      falling = true;
     }
   }
 

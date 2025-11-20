@@ -22,7 +22,6 @@ class SquareBody {
     js = 7;
     jumpStrength = 7;
     isOnGround = true;
-    falling = false;
   }
   // member methods
   void display() {
@@ -44,21 +43,8 @@ class SquareBody {
       isOnGround = false;
     }
     if (falling == true) {
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
-      h -= 10;
-      w -= 10;
-      delay(200);
+      h -= 50;
+      w -= 50;
     }
     if (y >= 775) {
       isOnGround = false;
