@@ -3,7 +3,7 @@ SquareBody s1;
 SquareBody2 s2;
 Map mp;
 boolean leftPress, upPress, downPress, rightPress, canJump;
-
+wall ww;
 void setup() {
   size(1000, 1000);
   s1 = new SquareBody(width/2, height/2, color(255, 0, 255));
@@ -14,10 +14,19 @@ void setup() {
   downPress = false;
   rightPress = false;
   canJump = false;
+  ww = new wall();
 }
 void draw() {
   background(0);
   mp.display();
+  ww.display();
+  ww.display2();
+  ww.display3();
+  ww.display4();
+  ww.move();
+  ww.move1();
+  ww.move2();
+  ww.move3();
   s1.update();
   s1.display();
   s2.update();
