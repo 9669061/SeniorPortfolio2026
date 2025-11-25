@@ -2,9 +2,10 @@
 SquareBody s1;
 SquareBody2 s2;
 Map mp;
-boolean leftPress, upPress, downPress, rightPress, canJump;
+boolean leftPress, upPress, downPress, rightPress, canJump, gamerun;
+PImage startScreen2;
 int timeHeldW, timeHeldA, timeHeldS, timeHeldD, timeHeldUp, timeHeldLeft, timeHeldDown, timeHeldRight;
-
+wall ww;
 void setup() {
   size(1000, 1000);
   s1 = new SquareBody(width/2, height/2, color(255, 0, 255));
@@ -15,18 +16,35 @@ void setup() {
   downPress = false;
   rightPress = false;
   canJump = false;
-  timeHeldW = 0;
-  timeHeldA = 0;
-  timeHeldS = 0;
-  timeHeldD = 0;
+  startScreen2 = loadImage("startScreen3.png");
+  ww = new wall();
+}
+void startScreen() {
+  imageMode(CENTER);
+  image(startScreen2,height/2,width/2);
+  if (mousePressed) {
+    gamerun = true;
+  }
 }
 void draw() {
+   if (!gamerun) {
+    startScreen(); 
+  } else {
   background(0);
   mp.display();
+  ww.display();
+  ww.display2();
+  ww.display3();
+  ww.display4();
+  ww.move();
+  ww.move1();
+  ww.move2();
+  ww.move3();
   s1.update();
   s1.display();
   s2.update();
   s2.display();
+  }
 }
 void keyPressed() {
   if (keyCode == UP) {
