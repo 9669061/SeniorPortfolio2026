@@ -72,22 +72,22 @@ class SquareBody {
   }
   void moveLeft() {
     if (isOnGround == true) {
-      x = x-10;
+      x = x-timeHeldLeft;
     }
   }
   void moveRight() {
     if (isOnGround == true) {
-      x = x+10;
+      x = x+timeHeldRight;
     }
   }
   void moveUp() {
     if (isOnGround == true) {
-      y = y-10;
+      y = y-timeHeldUp;
     }
   }
   void moveDown() {
     if (isOnGround == true) {
-      y = y+10;
+      y = y+timeHeldDown;
     }
   }
 }

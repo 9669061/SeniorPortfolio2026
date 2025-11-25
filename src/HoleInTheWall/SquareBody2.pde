@@ -22,6 +22,7 @@ class SquareBody2 {
     js = 7;
     jumpStrength = 7;
     isOnGround = true;
+
   }
   // member methods
   void display() {
@@ -72,22 +73,22 @@ class SquareBody2 {
   }
   void moveLeft() {
     if (isOnGround == true) {
-      x = x-10;
+      x = x-timeHeldA;
     }
   }
   void moveRight() {
     if (isOnGround == true) {
-      x = x+10;
+      x = x+timeHeldD;
     }
   }
   void moveUp() {
     if (isOnGround == true) {
-      y = y-10;
+      y = y-timeHeldW;
     }
   }
   void moveDown() {
     if (isOnGround == true) {
-      y = y+10;
+      y = y+timeHeldS;
     }
   }
 }
