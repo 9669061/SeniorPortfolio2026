@@ -5,7 +5,7 @@ Map mp;
 boolean leftPress, upPress, downPress, rightPress, canJump, gamerun;
 PImage startScreen2;
 int timeHeldW, timeHeldA, timeHeldS, timeHeldD, timeHeldUp, timeHeldLeft, timeHeldDown, timeHeldRight;
-wall ww;
+Wall ww;
 void setup() {
   size(1000, 1000);
   s1 = new SquareBody(width/2, height/2, color(255, 0, 255));
@@ -17,7 +17,7 @@ void setup() {
   rightPress = false;
   canJump = false;
   startScreen2 = loadImage("startScreen3.png");
-  ww = new wall();
+  ww = new Wall();
 }
 void startScreen() {
   imageMode(CENTER);
