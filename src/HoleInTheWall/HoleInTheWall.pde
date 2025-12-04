@@ -1,3 +1,4 @@
+
 // CJ Greer | 10/28/2025 | Object Tester
 SquareBody s1;
 SquareBody2 s2;
@@ -5,7 +6,7 @@ Map mp;
 boolean leftPress, upPress, downPress, rightPress, canJump, gamerun;
 PImage startScreen2;
 int timeHeldW, timeHeldA, timeHeldS, timeHeldD, timeHeldUp, timeHeldLeft, timeHeldDown, timeHeldRight;
-Wall ww;
+wall ww;
 void setup() {
   size(1000, 1000);
   s1 = new SquareBody(width/2, height/2, color(255, 0, 255));
@@ -17,7 +18,7 @@ void setup() {
   rightPress = false;
   canJump = false;
   startScreen2 = loadImage("startScreen3.png");
-  ww = new Wall();
+  ww = new wall();
 }
 void startScreen() {
   imageMode(CENTER);
@@ -31,6 +32,7 @@ void draw() {
     startScreen(); 
   } else {
   background(0);
+  ww.update();
   mp.display();
   ww.display();
   ww.display2();
