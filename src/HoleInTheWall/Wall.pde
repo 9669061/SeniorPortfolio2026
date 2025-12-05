@@ -83,7 +83,7 @@ class wall {
       s1.y = y3-45;
     }
     if (s2.y<y3 && s2.y>y3-45&&s2.x<=250+whpcd3+24) {
-      s1.y = y3-45;
+      s2.y = y3-45;
     }
     if (s2.y<y3 && s2.y>y3-45&&s2.x>=726-(h-(whpcd3+wh))) {
       s2.y = y3-45;
