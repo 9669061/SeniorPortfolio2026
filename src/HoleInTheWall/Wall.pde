@@ -1,7 +1,7 @@
 // Made by Mars Gorham
 class wall {
   int x, y, w, h, speed, speed1, speed2, speed3, x1, y1, x2, y2, x3, y3, timer, timer1, timer2, timer3, wr, rando, timer01, timer11, timer21, timer31, time, wall, wall1, wall2, wall3;
-  int wmove, sSpeed, tspeed, wh, whpcd, whpcd1, whpcd2, whpcd3;
+  int wmove, sSpeed, tspeed, wh, whpcd, whpcd1, whpcd2, whpcd3, wallCount;
   float wallTimer, wsc;
   int value = 0;
 
@@ -36,6 +36,7 @@ class wall {
     wall = 0;
     wallTimer = 55;
     sSpeed = 2;
+    wallCount = 1;
   }
   // Moves the player if the player is near wall
   void update() {
@@ -142,10 +143,15 @@ class wall {
       if (timer1>20) {
         timer1=0;
         y1 = 150;
-        //wsc = wsc+.1;
-        //if (wsc>=1&& sSpeed<6) {
-        //  sSpeed = sSpeed+2;
-        //}
+        wsc = wsc+.1;
+        if (wsc >= .9&&wsc<=1.5) {
+          wallCount = 2;
+        } else if (wsc >= 2.9&&wsc<=3.5) {
+          sSpeed = 3;
+        } else if (wsc >= 4.9) {
+          wallCount = 3;
+          sSpeed = 3;
+        }
         whpcd1 = int(random(wh+30, 500-(wh+30)));
         if (wh>55) {
           wh = wh-2;
@@ -178,10 +184,15 @@ class wall {
       if (timer2>20) {
         timer2=0;
         x2 = 850;
-        //wsc = wsc+.1;
-        //if (wsc>=1&& sSpeed<6) {
-        //  sSpeed = sSpeed+2;
-        //}
+        wsc = wsc+.1;
+        if (wsc >= .9&&wsc<=1.5) {
+          wallCount = 2;
+        } else if (wsc >= 2.9&&wsc<=3.5) {
+          sSpeed = 3;
+        } else if (wsc >= 4.9) {
+          wallCount = 3;
+          sSpeed = 3;
+        }
         whpcd2 = int(random(wh+30, 500-(wh+30)));
         if (wh>55) {
           wh = wh-5;
@@ -214,10 +225,15 @@ class wall {
       if (timer3>20) {
         timer3=0;
         y3 = 850;
-        //wsc = wsc+.1;
-        //if (wsc>=1&& sSpeed<6) {
-        //  sSpeed = sSpeed+2;
-        //}
+        wsc = wsc+.1;
+        if (wsc >= .9&&wsc<=1.5) {
+          wallCount = 2;
+        } else if (wsc >= 2.89&&wsc<=3.5) {
+          sSpeed = 3;
+        } else if (wsc >= 4.9) {
+          wallCount = 3;
+          sSpeed = 3;
+        }
         whpcd3 = int(random(wh+30, 500-(wh+30)));
         if (wh>55) {
           wh = wh-5;
@@ -252,10 +268,15 @@ class wall {
         timer=0;
         x = 150;
         y = 500;
-        //wsc = wsc+.1;
-        //if (wsc>=1&& sSpeed<6) {
-        //  sSpeed = sSpeed+2;
-        //}
+        wsc = wsc+.1;
+        if (wsc >= .9&&wsc<=1.5) {
+          wallCount = 2;
+        } else if (wsc >= 2.9&&wsc<=3.5) {
+          sSpeed = 3;
+        } else if (wsc >= 4.9) {
+          wallCount = 3;
+          sSpeed = 3;
+        }
         whpcd = int(random(wh+30, 500-(wh+30)));
         if (wh>55) {
           wh = wh-5;
@@ -279,7 +300,31 @@ class wall {
       } else {
         wall3 = 1;
       }
+      // if wall count is more than 1 then multiple walls will go
+      if (wallCount>=2) {
+        if (random(4) > 3 && random(4)<=4) {
+          wall = 1;
+        } else if (random(4) > 2 && random(4)<=3) {
+          wall1 = 1;
+        } else if (random(4) > 1 && random(4)<=2) {
+          wall2 = 1;
+        } else {
+          wall3 = 1;
+        }
+      }
+      if (wallCount==3) {
+        if (random(4) > 3 && random(4)<=4) {
+          wall = 1;
+        } else if (random(4) > 2 && random(4)<=3) {
+          wall1 = 1;
+        } else if (random(4) > 1 && random(4)<=2) {
+          wall2 = 1;
+        } else {
+          wall3 = 1;
+        }
+      }
     }
+
     // forces the walls to move by force
     if (keyPressed) {
       if (key == '1') {
