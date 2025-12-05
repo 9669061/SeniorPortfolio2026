@@ -144,11 +144,11 @@ class wall {
         timer1=0;
         y1 = 150;
         wsc = wsc+.1;
-        if (wsc >= .9&&wsc<=1.5) {
+        if (wsc >= 1.4&&wsc<=1.9) {
           wallCount = 2;
-        } else if (wsc >= 2.9&&wsc<=3.5) {
+        } else if (wsc >= 3.4&&wsc<=3.9) {
           sSpeed = 3;
-        } else if (wsc >= 4.9) {
+        } else if (wsc >= 5.4) {
           wallCount = 3;
           sSpeed = 3;
         }
@@ -185,11 +185,11 @@ class wall {
         timer2=0;
         x2 = 850;
         wsc = wsc+.1;
-        if (wsc >= .9&&wsc<=1.5) {
+        if (wsc >= 1.4&&wsc<=1.9) {
           wallCount = 2;
-        } else if (wsc >= 2.9&&wsc<=3.5) {
+        } else if (wsc >= 3.4&&wsc<=3.9) {
           sSpeed = 3;
-        } else if (wsc >= 4.9) {
+        } else if (wsc >= 5.4) {
           wallCount = 3;
           sSpeed = 3;
         }
@@ -226,11 +226,11 @@ class wall {
         timer3=0;
         y3 = 850;
         wsc = wsc+.1;
-        if (wsc >= .9&&wsc<=1.5) {
+        if (wsc >= 1.4&&wsc<=1.9) {
           wallCount = 2;
-        } else if (wsc >= 2.89&&wsc<=3.5) {
+        } else if (wsc >= 3.4&&wsc<=3.9) {
           sSpeed = 3;
-        } else if (wsc >= 4.9) {
+        } else if (wsc >= 5.4) {
           wallCount = 3;
           sSpeed = 3;
         }
@@ -269,11 +269,11 @@ class wall {
         x = 150;
         y = 500;
         wsc = wsc+.1;
-        if (wsc >= .9&&wsc<=1.5) {
+        if (wsc >= 1.4&&wsc<=1.9) {
           wallCount = 2;
-        } else if (wsc >= 2.9&&wsc<=3.5) {
+        } else if (wsc >= 3.4&&wsc<=3.9) {
           sSpeed = 3;
-        } else if (wsc >= 4.9) {
+        } else if (wsc >= 5.4) {
           wallCount = 3;
           sSpeed = 3;
         }
