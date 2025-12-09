@@ -40,54 +40,7 @@ class wall {
   }
   // Moves the player if the player is near wall
   void update() {
-    if (s1.x>x && s1.x<x+45&&s1.y<=250+whpcd+24) {
-      s1.x = x+45;
-    }
-    if (s1.x>x && s1.x<x+45&&s1.y>=726-(h-(whpcd+wh))) {
-      s1.x = x+45;
-    }
-    if (s2.x>x && s2.x<x+45&&s2.y<=250+whpcd+24) {
-      s2.x = x+45;
-    }
-    if (s2.x>x && s2.x<x+45&&s2.y>=726-(h-(whpcd+wh))) {
-      s2.x = x+45;
-    }
-    if (s1.x<x2 && s1.x>x2-45&&s1.y<=250+whpcd2+24) {
-      s1.x = x2-45;
-    }
-    if (s1.x<x2 && s1.x>x2-45&&s1.y>=726-(h-(whpcd2+wh))) {
-      s1.x = x2-45;
-    }
-    if (s2.x<x2 && s2.x>x2-45&&s2.y<=250+whpcd2+24) {
-      s2.x = x2-45;
-    }
-    if (s2.x<x2 && s2.x>x2-45&&s2.y>=726-(h-(whpcd2+wh))) {
-      s2.x = x2-45;
-    }
-    if (s1.y>y1 && s1.y<y1+45&&s1.x<=250+whpcd1+24) {
-      s1.y = y1+45;
-    }
-    if (s1.y>y1 && s1.y<y1+45&&s1.x>=726-(h-(whpcd1+wh))) {
-      s1.y = y1+45;
-    }
-    if (s2.y>y1 && s2.y<y1+45&&s2.x<=250+whpcd1+24) {
-      s2.y = y1+45;
-    }
-    if (s2.y>y1 && s2.y<y1+45&&s2.x>=726-(h-(whpcd1+wh))) {
-      s2.y = y1+45;
-    }
-    if (s1.y<y3 && s1.y>y3-45&&s1.x<=250+whpcd3+24) {
-      s1.y = y3-45;
-    }
-    if (s1.y<y3 && s1.y>y3-45&&s1.x>=726-(h-(whpcd3+wh))) {
-      s1.y = y3-45;
-    }
-    if (s2.y<y3 && s2.y>y3-45&&s2.x<=250+whpcd3+24) {
-      s2.y = y3-45;
-    }
-    if (s2.y<y3 && s2.y>y3-45&&s2.x>=726-(h-(whpcd3+wh))) {
-      s2.y = y3-45;
-    }
+// ;-; all this moved to the square bodies NOOOOOOOOOOOOO
   }
   // makes the first wall
   void display() {
