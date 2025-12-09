@@ -92,7 +92,7 @@ class wall {
   // makes the first wall
   void display() {
     noStroke();
-    fill(100);
+    fill(255,0,0);
     rectMode(CORNER);
     rect(x-w/2, y-h/2, w, whpcd);
     rect(x-w/2, y-h/2+whpcd+wh, w, h-(whpcd+wh));
@@ -100,23 +100,29 @@ class wall {
   // makes second wall
   void display2() {
     noStroke();
+    fill(#FFFF00);
     rectMode(CORNER);
     rect(x1-h/2, y1-w/2, whpcd1, w);
     rect(x1-h/2+whpcd1+wh, y1-w/2, h-(whpcd1+wh), w);
+    fill(200);
   }
   // makes third wall
   void display3() {
     noStroke();
+    fill(0,255,0);
     rectMode(CORNER);
     rect(x2-w/2, y2-h/2, w, whpcd2);
     rect(x2-w/2, y2-h/2+whpcd2+wh, w, h-(whpcd2+wh));
+    fill(200);
   }
   // makes fourth wall
   void display4() {
     noStroke();
+    fill(0,0,255);
     rectMode(CORNER);
     rect(x3-h/2, y3-w/2, whpcd3, w);
     rect(x3-h/2+whpcd3+wh, y3-w/2, h-(whpcd3+wh), w);
+    fill(200);
   }
   // moves the second wall
   void move1() {
