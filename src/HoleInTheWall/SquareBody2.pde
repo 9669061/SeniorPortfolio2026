@@ -1,3 +1,4 @@
+
 // CJ Greer | 11/3/2025 | Square Body
 class SquareBody2 {
   // member variable

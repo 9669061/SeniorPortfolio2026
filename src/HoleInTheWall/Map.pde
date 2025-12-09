@@ -16,11 +16,5 @@ class Map {
     fill(150, 150, 150);
     rectMode(CENTER);
     rect(x, y, w, h);
-    fill(150,150);
-    rect(width/2,1000-25,1000,50);
-    textAlign(LEFT);
-    textSize(50);
-    fill(0);
-    text("Walls Passed: " + ww.wsc*10,0,1000-10);
   }
 }
