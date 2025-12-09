@@ -32,6 +32,30 @@ class SquareBody2 {
     rect(x, y, w, h);
   }
   void update() {
+        if (s2.x>ww.x && s2.x<ww.x+45&&s2.y<=250+ww.whpcd+24) {
+      s2.x = ww.x+45;
+    }
+    if (s2.x>ww.x && s2.x<ww.x+45&&s2.y>=726-(h-(ww.whpcd+ww.wh))) {
+      s2.x = ww.x+45;
+    }
+    if (s2.x<ww.x2 && s2.x>ww.x2-45&&s2.y<=250+ww.whpcd2+24) {
+      s2.x = ww.x2-45;
+    }
+    if (s2.x<ww.x2 && s2.x>ww.x2-45&&s2.y>=726-(ww.h-(ww.whpcd2+ww.wh))) {
+      s2.x = ww.x2-45;
+    }
+    if (s2.y>ww.y1 && s2.y<ww.y1+45&&s2.x<=250+ww.whpcd1+24) {
+      s2.y = ww.y1+45;
+    }
+    if (s2.y>ww.y1 && s2.y<ww.y1+45&&s2.x>=726-(ww.h-(ww.whpcd1+ww.wh))) {
+      s2.y = ww.y1+45;
+    }
+    if (s2.y<ww.y3 && s2.y>ww.y3-45&&s2.x<=250+ww.whpcd3+24) {
+      s2.y = ww.y3-45;
+    }
+    if (s2.y<ww.y3 && s2.y>ww.y3-45&&s2.x>=726-(ww.h-(ww.whpcd3+ww.wh))) {
+      s2.y = ww.y3-45;
+    }
     yVel -= gravity;
     h += yVel;
     w += yVel;
