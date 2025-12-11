@@ -21,6 +21,6 @@ class Map {
     textAlign(LEFT);
     textSize(50);
     fill(0);
-    text("Walls Passed: " + ww.wsc*10,0,1000-10);
+    text("Walls Passed: " + ww.wsc,0,1000-10);
   }
 }
