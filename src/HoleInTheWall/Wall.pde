@@ -106,7 +106,7 @@ class wall {
         wsc = wsc+1;
         if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 34&&wsc<=39) {
+        } else if (wsc >= 24&&wsc<=29) {
           wallCount = 3;
         } else if (wsc >= 54) {
           wallCount = 3;
@@ -147,7 +147,7 @@ class wall {
         wsc = wsc+1;
         if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 34&&wsc<=39) {
+        } else if (wsc >= 24&&wsc<=29) {
           wallCount = 2;
         } else if (wsc >= 54) {
           wallCount = 3;
@@ -188,7 +188,7 @@ class wall {
         wsc = wsc+1;
         if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 34&&wsc<=39) {
+        } else if (wsc >= 24&&wsc<=29) {
           wallCount = 2;
         } else if (wsc >= 54) {
           wallCount = 3;
@@ -231,7 +231,7 @@ class wall {
         wsc = wsc+1;
         if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 34&&wsc<=39) {
+        } else if (wsc >= 24&&wsc<=29) {
           wallCount = 2;
         } else if (wsc >= 54) {
           wallCount = 3;
