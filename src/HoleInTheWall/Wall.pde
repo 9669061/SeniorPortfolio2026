@@ -1,8 +1,8 @@
 // Made by Mars Gorham
 class wall {
   int x, y, w, h, speed, speed1, speed2, speed3, x1, y1, x2, y2, x3, y3, timer, timer1, timer2, timer3, wr, rando, timer01, timer11, timer21, timer31, time, wall, wall1, wall2, wall3;
-  int wmove, sSpeed, tspeed, wh, whpcd, whpcd1, whpcd2, whpcd3, wallCount;
-  float wallTimer, wsc;
+  int wmove, sSpeed, tspeed, wh, whpcd, whpcd1, whpcd2, whpcd3, wallCount, wsc;
+  float wallTimer;
   int value = 0;
 
   // Constructor
@@ -44,13 +44,14 @@ class wall {
   }
   // makes the first wall
   void display() {
-    noStroke();
+    noStroke(); 
     fill(255,0,0);
     rectMode(CORNER);
     rect(x-w/2, y-h/2, w, whpcd);
     rect(x-w/2, y-h/2+whpcd+wh, w, h-(whpcd+wh));
+    fill(255,128);
   }
-  // makes second wall
+  // makes second wall  
   void display2() {
     noStroke();
     fill(#FFFF00);
@@ -102,17 +103,17 @@ class wall {
       if (timer1>20) {
         timer1=0;
         y1 = 150;
-        wsc = wsc+.1;
-        if (wsc >= 1.4&&wsc<=1.9) {
-          wallCount = 2;
-        } else if (wsc >= 3.4&&wsc<=3.9) {
+        wsc = wsc+1;
+        if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 5.4) {
+        } else if (wsc >= 34&&wsc<=39) {
+          wallCount = 3;
+        } else if (wsc >= 54) {
           wallCount = 3;
           sSpeed = 3;
         }
         whpcd1 = int(random(wh+30, 500-(wh+30)));
-        if (wh>55) {
+        if (wh>60) {
           wh = wh-2;
         }
       }
@@ -143,18 +144,18 @@ class wall {
       if (timer2>20) {
         timer2=0;
         x2 = 850;
-        wsc = wsc+.1;
-        if (wsc >= 1.4&&wsc<=1.9) {
-          wallCount = 2;
-        } else if (wsc >= 3.4&&wsc<=3.9) {
+        wsc = wsc+1;
+        if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 5.4) {
+        } else if (wsc >= 34&&wsc<=39) {
+          wallCount = 2;
+        } else if (wsc >= 54) {
           wallCount = 3;
           sSpeed = 3;
         }
         whpcd2 = int(random(wh+30, 500-(wh+30)));
-        if (wh>55) {
-          wh = wh-5;
+        if (wh>60) {
+          wh = wh-2;
         }
       }
     }
@@ -184,18 +185,18 @@ class wall {
       if (timer3>20) {
         timer3=0;
         y3 = 850;
-        wsc = wsc+.1;
-        if (wsc >= 1.4&&wsc<=1.9) {
-          wallCount = 2;
-        } else if (wsc >= 3.4&&wsc<=3.9) {
+        wsc = wsc+1;
+        if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 5.4) {
+        } else if (wsc >= 34&&wsc<=39) {
+          wallCount = 2;
+        } else if (wsc >= 54) {
           wallCount = 3;
           sSpeed = 3;
         }
         whpcd3 = int(random(wh+30, 500-(wh+30)));
-        if (wh>55) {
-          wh = wh-5;
+        if (wh>60) {
+          wh = wh-2;
         }
       }
     }
@@ -227,18 +228,18 @@ class wall {
         timer=0;
         x = 150;
         y = 500;
-        wsc = wsc+.1;
-        if (wsc >= 1.4&&wsc<=1.9) {
-          wallCount = 2;
-        } else if (wsc >= 3.4&&wsc<=3.9) {
+        wsc = wsc+1;
+        if (wsc >= 14&&wsc<=19) {
           sSpeed = 3;
-        } else if (wsc >= 5.4) {
+        } else if (wsc >= 34&&wsc<=39) {
+          wallCount = 2;
+        } else if (wsc >= 54) {
           wallCount = 3;
           sSpeed = 3;
         }
         whpcd = int(random(wh+30, 500-(wh+30)));
-        if (wh>55) {
-          wh = wh-5;
+        if (wh>60) {
+          wh = wh-2;
         }
       }
     }
