@@ -32,10 +32,11 @@ class SquareBody2 {
     rect(x, y, w, h);
   }
   void update() {
+    //collision
         if (s2.x>ww.x && s2.x<ww.x+45&&s2.y<=250+ww.whpcd+24) {
       s2.x = ww.x+45;
     }
-    if (s2.x>ww.x && s2.x<ww.x+45&&s2.y>=726-(h-(ww.whpcd+ww.wh))) {
+    if (s2.x>ww.x && s2.x<ww.x+45&&s2.y>=726-(ww.h-(ww.whpcd+ww.wh))) {
       s2.x = ww.x+45;
     }
     if (s2.x<ww.x2 && s2.x>ww.x2-45&&s2.y<=250+ww.whpcd2+24) {
