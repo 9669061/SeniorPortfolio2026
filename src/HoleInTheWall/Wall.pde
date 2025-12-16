@@ -40,18 +40,18 @@ class wall {
   }
   // Moves the player if the player is near wall
   void update() {
-// ;-; all this moved to the square bodies NOOOOOOOOOOOOO
+    // ;-; all this moved to the square bodies NOOOOOOOOOOOOO
   }
   // makes the first wall
   void display() {
-    noStroke(); 
-    fill(255,0,0);
+    noStroke();
+    fill(255, 0, 0);
     rectMode(CORNER);
     rect(x-w/2, y-h/2, w, whpcd);
     rect(x-w/2, y-h/2+whpcd+wh, w, h-(whpcd+wh));
-    fill(255,128);
+    fill(255, 128);
   }
-  // makes second wall  
+  // makes second wall
   void display2() {
     noStroke();
     fill(#FFFF00);
@@ -63,7 +63,7 @@ class wall {
   // makes third wall
   void display3() {
     noStroke();
-    fill(0,255,0);
+    fill(0, 255, 0);
     rectMode(CORNER);
     rect(x2-w/2, y2-h/2, w, whpcd2);
     rect(x2-w/2, y2-h/2+whpcd2+wh, w, h-(whpcd2+wh));
@@ -72,7 +72,7 @@ class wall {
   // makes fourth wall
   void display4() {
     noStroke();
-    fill(0,0,255);
+    fill(0, 0, 255);
     rectMode(CORNER);
     rect(x3-h/2, y3-w/2, whpcd3, w);
     rect(x3-h/2+whpcd3+wh, y3-w/2, h-(whpcd3+wh), w);
@@ -262,14 +262,14 @@ class wall {
       }
       // if wall count is more than 1 then multiple walls will go
       if (wallCount>=2) {
-        if (random(4) > 3 && random(4)<=4) {
-          wall = 1;
-        } else if (random(4) > 2 && random(4)<=3) {
-          wall1 = 1;
-        } else if (random(4) > 1 && random(4)<=2) {
+        if (wall == 1) {
           wall2 = 1;
-        } else {
+        } else if (wall1 == 1) {
           wall3 = 1;
+        } else if (wall2 == 1) {
+          wall = 1;
+        } else if (wall3 == 1) {
+          wall1 = 1;
         }
       }
       if (wallCount==3) {
