@@ -1,5 +1,6 @@
 // Made by Mars Gorham
 class wall {
+  // I had so many intergers that i had 2 different sets of ints i probably could've used booleans instead but i didnt know how to use them until present mars happened
   int x, y, w, h, speed, speed1, speed2, speed3, x1, y1, x2, y2, x3, y3, timer, timer1, timer2, timer3, wr, rando, timer01, timer11, timer21, timer31, time, wall, wall1, wall2, wall3;
   int wmove, sSpeed, tspeed, wh, whpcd, whpcd1, whpcd2, whpcd3, wallCount, wsc;
   float wallTimer;
@@ -41,6 +42,7 @@ class wall {
   // Moves the player if the player is near wall
   void update() {
     // ;-; all this moved to the square bodies NOOOOOOOOOOOOO
+    // UPDATE IS USELESS NOW
   }
   // makes the first wall
   void display() {
