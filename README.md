@@ -44,6 +44,7 @@ Survive as long as possible, destroy incoming asteroids, collect upgrades, and p
 - CJ
 - Eli
 - Mars
+-Jonathan
 
 Hole in the Wall is a fast-paced reaction game where players must quickly position themselves to fit through oncoming walls with cutout shapes. As each wall rushes forward, you have only seconds to find the correct spot or pose before being knocked off the platform. The walls get faster and trickier with each round, testing your timing, spatial awareness, and agility. The last player standing wins.
 
